@@ -13,14 +13,12 @@ header img{
     margin-top: 20px;
     margin-left: 40px;
     max-height: 40px;
-    border: 1px solid red;
 }
 
 .navigation {
     float: right;
     margin-top: 30px;
     margin-right: 50px;
-    border :1px solid red;
 }
 
 .navigation a{
@@ -29,15 +27,21 @@ header img{
     float: right;
     margin-left: 20px;
     border :1px solid red;
+    padding:3px;
+}
+
+#mainimage {
+    position:absolute;
+    max-height: 180px;
+    transform: translate(570px, 85px);
 }
 
 #welcome {
-    margin-top: 230px;
+    margin-top: 310px;
     color: black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 400%;
     text-align: center;
-    border :1px solid red;
     margin-left: 220px;
     margin-right: 220px;
     z-index: 10;
@@ -49,7 +53,6 @@ header img{
     max-width: 90px;
     float: right;
     margin-right:200px;
-    border :1px solid red;
     transform: translate(1030%, 0%);
     position :absolute;
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
@@ -61,7 +64,6 @@ header img{
     float: right;
     margin-right:200px;
     margin-top: 30px;
-    border :1px solid red;
     transform: translate(1030%, 80%);
     position :absolute;
     -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
@@ -73,7 +75,6 @@ header img{
     float: right;
     margin-right:200px;
     margin-top: 30px;
-    border :1px solid red;
     transform: translate(1030%, 160%);
     position :absolute;
 }
@@ -84,7 +85,6 @@ header img{
     float: right;
     margin-right:200px;
     margin-top: 30px;
-    border :1px solid red;
     transform: translate(1030%, 240%);
     position :absolute;
 }
@@ -95,7 +95,6 @@ header img{
     float: right;
     margin-right:200px;
     margin-top: 30px;
-    border :1px solid red;
     transform: translate(1030%, 320%);
     position :absolute;
 }
@@ -106,7 +105,6 @@ header img{
     float: right;
     margin-right:200px;
     margin-top: 30px;
-    border :1px solid red;
     transform: translate(1030%, 400%);
     position :absolute;
 }
@@ -117,7 +115,6 @@ header img{
     float: right;
     margin-right:200px;
     margin-top: 30px;
-    border :1px solid red;
     transform: translate(1030%, 480%);
     position :absolute;
 }
@@ -128,7 +125,6 @@ header img{
     float: right;
     margin-right:200px;
     margin-top: 30px;
-    border :1px solid red;
     transform: translate(1030%, 560%);
     position :absolute;
 }
@@ -139,8 +135,37 @@ header img{
     float: right;
     margin-right:200px;
     margin-top: 30px;
-    border :1px solid red;
     transform: translate(1030%, 640%);
+    position :absolute;
+}
+
+#tiremark10 {
+    z-index: 3;
+    max-width: 90px;
+    float: right;
+    margin-right:200px;
+    margin-top: 30px;
+    transform: translate(1030%, 720%);
+    position :absolute;
+}
+
+#tiremark11 {
+    z-index: 3;
+    max-width: 90px;
+    float: right;
+    margin-right:200px;
+    margin-top: 30px;
+    transform: translate(1030%, 800%);
+    position :absolute;
+}
+
+#tiremark12 {
+    z-index: 3;
+    max-width: 90px;
+    float: right;
+    margin-right:200px;
+    margin-top: 30px;
+    transform: translate(1030%, 880%);
     position :absolute;
 }
 
@@ -271,3 +296,83 @@ header img{
     transform: translate(205px, 1970px);       /*670*/
 }
 
+
+#contact_link {
+    border :1px solid red;
+    position:absolute;
+    transform: translate(0px, 2640px);
+}
+
+.contact {
+    z-index: 20;
+    background-color:whitesmoke;
+    border: 5px solid black; 
+    position :absolute;
+    margin-right: 70%;
+    transform: translate(500px, 2710px);
+    padding-left: 3em;
+    padding-right:3em;
+    padding-top:2em;
+    padding-bottom:2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.contact h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:oblique;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.contact #homelink{
+    text-align: center;
+    font-style:oblique;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
+
+
+#messagebox{
+    font-size: 18px;
+    height:150px;
+    width:200px;
+}
+
+.socials{
+    position: absolute;
+    margin-top: 3360px;
+    background-color: white;
+    float: left;
+}
+
+.socials img{
+    max-height:30px;
+}
+
+#gh{
+    margin-left:35%;
+}
+#li{
+    margin-left:41%;
+}
+#tw{
+    margin-left:47.5%;
+}
+#fb{
+    margin-left:54%;
+    position: absolute;
+    z-index: 100;
+}
+#ig{
+    margin-left:60%;
+    height: 40px;
+}
+
+footer{
+    margin-top: 3629px;
+    border: 1px solid red;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
