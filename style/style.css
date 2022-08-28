@@ -1,0 +1,273 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    height: 80px;
+}
+
+header img{
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    max-height: 40px;
+    border: 1px solid red;
+}
+
+.navigation {
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    border :1px solid red;
+}
+
+.navigation a{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+    margin-left: 20px;
+    border :1px solid red;
+}
+
+#welcome {
+    margin-top: 230px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 400%;
+    text-align: center;
+    border :1px solid red;
+    margin-left: 220px;
+    margin-right: 220px;
+    z-index: 10;
+    position:absolute;
+}
+
+#tiremark1 {
+    z-index: 3;
+    max-width: 90px;
+    float: right;
+    margin-right:200px;
+    border :1px solid red;
+    transform: translate(1030%, 0%);
+    position :absolute;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+#tiremark2 {
+    z-index: 3;
+    max-width: 90px;
+    float: right;
+    margin-right:200px;
+    margin-top: 30px;
+    border :1px solid red;
+    transform: translate(1030%, 80%);
+    position :absolute;
+    -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+#tiremark3 {
+    z-index: 3;
+    max-width: 90px;
+    float: right;
+    margin-right:200px;
+    margin-top: 30px;
+    border :1px solid red;
+    transform: translate(1030%, 160%);
+    position :absolute;
+}
+
+#tiremark4 {
+    z-index: 3;
+    max-width: 90px;
+    float: right;
+    margin-right:200px;
+    margin-top: 30px;
+    border :1px solid red;
+    transform: translate(1030%, 240%);
+    position :absolute;
+}
+
+#tiremark5 {
+    z-index: 3;
+    max-width: 90px;
+    float: right;
+    margin-right:200px;
+    margin-top: 30px;
+    border :1px solid red;
+    transform: translate(1030%, 320%);
+    position :absolute;
+}
+
+#tiremark6 {
+    z-index: 3;
+    max-width: 90px;
+    float: right;
+    margin-right:200px;
+    margin-top: 30px;
+    border :1px solid red;
+    transform: translate(1030%, 400%);
+    position :absolute;
+}
+
+#tiremark7 {
+    z-index: 3;
+    max-width: 90px;
+    float: right;
+    margin-right:200px;
+    margin-top: 30px;
+    border :1px solid red;
+    transform: translate(1030%, 480%);
+    position :absolute;
+}
+
+#tiremark8 {
+    z-index: 3;
+    max-width: 90px;
+    float: right;
+    margin-right:200px;
+    margin-top: 30px;
+    border :1px solid red;
+    transform: translate(1030%, 560%);
+    position :absolute;
+}
+
+#tiremark9 {
+    z-index: 3;
+    max-width: 90px;
+    float: right;
+    margin-right:200px;
+    margin-top: 30px;
+    border :1px solid red;
+    transform: translate(1030%, 640%);
+    position :absolute;
+}
+
+#about_link {
+    border :1px solid red;
+    position:absolute;
+    transform: translate(0px, 480px);
+}
+
+.aboutme {
+    z-index: 20;
+    background-color:whitesmoke;
+    border: 5px solid black; 
+    position :absolute;
+    margin-right: 70%;
+    transform: translate(795px, 730px);
+    padding-left: 3em;
+    padding-right:3em;
+    padding-top:2em;
+    padding-bottom:2em;
+}
+
+.aboutme h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:oblique;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#normaltext {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+#normaltext li{
+    list-style-type:round;
+}
+
+.aboutme #homelink{
+    text-align: center;
+    font-style:oblique;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
+
+.aboutmeimage {
+    position:absolute;
+    transform: translate(205px, 630px);
+}
+
+#myskills_link {
+    border :1px solid red;
+    position:absolute;
+    transform: translate(0px, 1150px);          /*670*/
+}
+
+.myskills {
+    z-index: 20;
+    background-color:whitesmoke;
+    border: 5px solid black; 
+    position :absolute;
+    margin-right: 70%;
+    transform: translate(795px, 1400px);        /*670*/
+    padding-left: 3em;
+    padding-right:3em;
+    padding-top:2em;
+    padding-bottom:2em;
+}
+
+.myskills h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:oblique;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.myskills #homelink{
+    text-align: center;
+    font-style:oblique;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
+
+.myskillsimage {
+    position:absolute;
+    transform: translate(205px, 1300px);       /*670*/
+}
+
+
+
+#edu_link {
+    border :1px solid red;
+    position:absolute;
+    transform: translate(0px, 1820px);          /*670*/
+}
+
+.edu {
+    z-index: 20;
+    background-color:whitesmoke;
+    border: 5px solid black; 
+    position : absolute;
+    margin-right: 70%;
+    transform: translate(795px, 2070px);        /*670*/
+    padding-left: 3em;
+    padding-right:3em;
+    padding-top:2em;
+    padding-bottom:2em;
+}
+
+.edu h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:oblique;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.edu #homelink{
+    text-align: center;
+    font-style:oblique;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
+
+.eduimage{
+    position:absolute;
+    transform: translate(205px, 1970px);       /*670*/
+}
+
