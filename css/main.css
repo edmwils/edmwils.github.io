@@ -181,7 +181,7 @@ header img{
     border: 5px solid black; 
     position :absolute;
     margin-right: 70%;
-    transform: translate(795px, 730px);
+    transform: translate(770px, 730px);
     padding-left: 3em;
     padding-right:3em;
     padding-top:2em;
@@ -230,7 +230,7 @@ header img{
     border: 5px solid black; 
     position :absolute;
     margin-right: 70%;
-    transform: translate(795px, 1400px);        /*670*/
+    transform: translate(770px, 1400px);        /*670*/
     padding-left: 3em;
     padding-right:3em;
     padding-top:2em;
@@ -270,7 +270,7 @@ header img{
     border: 5px solid black; 
     position : absolute;
     margin-right: 70%;
-    transform: translate(795px, 2070px);        /*670*/
+    transform: translate(770px, 2070px);        /*670*/
     padding-left: 3em;
     padding-right:3em;
     padding-top:2em;
