@@ -2,127 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Who's That Pokémon?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            margin: 20px 0;
+        }
+        video {
+            max-width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .form-container {
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #reveal-video {
+            display: none;
+            position: relative;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-    <header id="siteheader">
-        <img src = "images/name.png" alt="Name" id="name">
-        <nav class="navigation">
-            <a href="#contact_link">Contact</a>
-            <a href="#edu_link">Education</a>
-            <a href="#myskills_link">Skills</a>
-            <a href="#about_link">About Me</a>
-            <a href="#siteheader">Home</a>
-        </nav>
-    </header>
-
-    
-    <img src = "images/me.png" id="mainimage" alt="me.jpg" id="me">
-    
-
-    <h1 id = "welcome">
-        Hello There! Welcome to <br> my website!
-    </h1>
-    <img src="images/skidmark.png" alt="tiremark1" id="tiremark1">
-    <img src="images/skidmark.png" alt="tiremark2" id="tiremark2">
-    <img src="images/skidmark.png" alt="tiremark3" id="tiremark3">
-    <img src="images/skidmark.png" alt="tiremark4" id="tiremark4">
-    <img src="images/skidmark.png" alt="tiremark5" id="tiremark5">
-    <img src="images/skidmark.png" alt="tiremark6" id="tiremark6">
-    <img src="images/skidmark.png" alt="tiremark7" id="tiremark7">
-    <img src="images/skidmark.png" alt="tiremark8" id="tiremark8">
-    <img src="images/skidmark.png" alt="tiremark9" id="tiremark9">
-    <img src="images/skidmark.png" alt="tiremark10" id="tiremark10">
-    <img src="images/skidmark.png" alt="tiremark11" id="tiremark11">
-    <img src="images/skidmark.png" alt="tiremark12" id="tiremark12">
-
-    <div id="about_link">
-    </div>  
-    <div class="aboutme">
-        <h1>About Me</h1>
-        <p id="normaltext">I am Edwin Wilson. Currently working as a Network Engineer at Cisco Systems. I am an avid biker and love going on long trips. Technology for me is like magic and learning it makes me happy</p> 
-        <br> 
-        <a href="#" id="homelink">(Home)</a>
-    </div>
-    <div class="aboutmeimage">
-        <img src="images/bike.png" alt="bike" id="bike">
-    </div>
-
-    <div id="myskills_link">
-    </div>  
-    <div class="myskills">
-        <h1>My Skills</h1>
-        <ul id="normaltext">
-            <li>Programming Skills : Python, C++</li>
-            <li>Languages known : Malayalam, English, Hindi, French, Indonesian</li>
-            <li>Mad googling skills</li>
-            <li>Die hard optimism</li>
-        </ul> 
-        <br>
-        <a href="#" id="homelink">(Home)</a>
-    </div>
-    <div class="myskillsimage">
-        <img src="images/skills.png" alt="skills" id="skills">
-    </div>
-
-    <div id="edu_link">
-    </div>  
-    <div class="edu">
-        <h1>Education</h1>
-        <ul id="normaltext">
-            <li>M.Tech : Cochin University of Science and Technology (CUSAT), Kochi </li>
-            <li>B.Tech : Cochin University of Science and Technology (CUSAT), Kochi</li>
-            <li>High School : Nirmalamatha Central School, Thrissur</li>
-        </ul> 
-        <br>
-        <a href="#" id="homelink">(Home)</a>
-    </div>
-    <div class="eduimage">
-        <img src="images/edu.png" alt="edu" id="edu">
-    </div>
-
-    <div id="contact_link">
-    </div>  
-    <div class="contact">
-        <form action="#siteheader" class="contactform"></form>
-            <h1>Contact Me</h1><br><br>
-            <label for="Name">Username</label><br>
-            <input type="text" placeholder="John Doe"><br><br>
-            <label for="Email">Email</label><br>
-            <input type="email" placeholder="johndoe@anon.com"><br><br>
-            <label for="Phone">Phone Number</label><br>
-            <input type="number" placeholder="91 9876543210"><br><br>
-            <label for="Message">Message</label><br>
-            <input type="text" id="messagebox"><br><br>
-            <button id="logbutton">Submit</button><br><br>
-            <a href="#" id="homelink">(Home)</a>
-        </form>
-    </div>
-
     <div class="container">
-        <div class="socials" id="gh">
-            <a href="http://github.com/edmwils" target="_blank"><img src="images/gh.png"  alt="github"></a>
+        
+        <!-- Question video -->
+        <div class="video-container">
+            <video id="question-video" width="400" autoplay controls>
+                <source src="https://media-hosting.imagekit.io/9861724aadc447a5/videoplayback%20(online-video-cutter.com).mp4?Expires=1838136676&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=OH0zq2lniz76zBsePe9OYoH45MmmLfBgfaVfPt5KflzIJJj3CVtqcWPNRlEdoP72QsT6w3~ITo9PBZFAgxG-BJuqQIlyL0gwMxrCXkniD9U3lQsyatImN0fhXu0OzXPQZZB2C5EG~vzXpo8HFZHXBigd8HtYOBFWgd80y~Pepiw0m8ZnNu8PMLo9sldYq2lBPkFjo1NMNtghezsxYj7L-Qc6FG0UOrjhd3Gs4DCYKs7ef1VZMlVaTVf~bbV0tzZawlp1nOOu8DUOHkfylqtO2xM~TIIYbkdGPc3Xy2Vlx8~gYzESDCvJgk57Y5orrvAFUubv9eo5RZV1TsCt4ED3ng__" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <!-- Reveal video (hidden initially) -->
+            <video id="reveal-video" width="400" controls>
+                <source src="https://media-hosting.imagekit.io/15f8bea889b94208/videoplayback%20(online-video-cutter.com)%20(1).mp4?Expires=1838136676&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=yqLyN~dTGVzhzBwGUm625b8dY1J6xZxcFJidJ49GBm~v9vBRqjO9HVoV-lLMJWtcEWqgrYH1SOIKBSSVt0VVhgKthgKH9c284ChkPC9uK0E-VNazsZ1MK4C6HM4OCtPiMb4Bf7btJB6bk2YUasTEi~aBSyJHwlnw3LkWnklAyglHrbAtIFFmYtbc9I7d7eRF8AgelCjvApnymmR8IKPn8Qakd5QYybI-giy6dvNVYFGPJhwLdNEKcRwoZ2fR1h9XIuDlxjdmDrbDPoX5-8zA3mGApoaUjLoGe-QbuKdRyiJATugFDZ9JKb9jr0B83oZb5gBTEhqaJKTglCOPnpk-IA__" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
-        <div class="socials" id="li">
-            <a href="https://www.linkedin.com/in/edwin-muriyaden-wilson-688685b8/"  target="_blank"><img src="images/linkedin.png"  alt="linkedin"></a>
-        </div>
-        <div class="socials" id="tw">
-            <a href="http://twitter.com/edmwils" target="_blank"><img src="images/twitter.png"  alt="twitter"></a>
-        </div>
-        <div class="socials" id="fb">
-            <a href="http://fb.com/edwinmuriyaden" target="_blank"><img src="images/fb.png"  alt="facebook"></a>
-        </div>
-        <div class="socials" id="ig">
-            <a href="http://instagram.com/edmwils" target="_blank"><img src="images/insta.svg"  alt="instagram"></a>
+        
+        <!-- Answer form -->
+        <div class="form-container">
+            <form id="pokemon-form">
+                <input type="text" id="answer" placeholder="Type answer here!" required>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </div>
 
-    <footer>
-        <p>Copyright 2022 Edwin Wilson</p>
-    </footer>
-
+    <script>
+        // Your Google Photos album URL
+        const googlePhotosUrl = "https://photos.app.goo.gl/QqSRtYuqV3Xb7g5f7";
+        
+        // Get video elements
+        const questionVideo = document.getElementById('question-video');
+        const revealVideo = document.getElementById('reveal-video');
+        
+        // Play the question video when the page loads
+        window.onload = function() {
+            questionVideo.play();
+        };
+        
+        // Allow replaying the question video when clicked
+        questionVideo.addEventListener('click', function() {
+            questionVideo.currentTime = 0;
+            questionVideo.play();
+        });
+        
+        // Add event listener to the form
+        document.getElementById('pokemon-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const answer = document.getElementById('answer').value.toLowerCase();
+            
+            // Check if the answer is correct (Pikachu)
+            if (answer === "pikachu") {
+                // Hide question video and show reveal video
+                questionVideo.style.display = 'none';
+                revealVideo.style.display = 'block';
+                
+                // Play the reveal video
+                revealVideo.play();
+                
+                // Set up redirect after the reveal video plays
+                revealVideo.onended = function() {
+                    // Wait 0.5 seconds before redirecting
+                    setTimeout(function() {
+                        window.location.href = googlePhotosUrl;
+                    }, 500);
+                };
+            } else {
+                alert("Try again! Hint: It's a yellow electric Pokémon.");
+            }
+        });
+    </script>
 </body>
 </html>
